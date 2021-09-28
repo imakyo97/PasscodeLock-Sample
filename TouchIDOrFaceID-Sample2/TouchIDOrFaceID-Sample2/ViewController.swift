@@ -47,6 +47,8 @@ class ViewController: UIViewController {
                 if let error = error {
                     self.setupLabelText(text: error.localizedDescription)
                 }
+                // reply(success)は認証が終了した時に呼び出される。
+                // successは成功した場合true,失敗した場合falseを返す。
                 if success {
                     // 認証成功
                     self.setupLabelText(text:"認証に成功しました")
